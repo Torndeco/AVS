@@ -148,5 +148,4 @@ if (AVS_RearmSystemActive) then
 	publicVariable "AVS_RearmCosts";
 };
 
-AVS_Initialized = true;
 diag_log "AVS - Initialized.";

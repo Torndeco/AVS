@@ -15,6 +15,11 @@ Return Value:
 	None
 */
 
+if (isNil "AVS_Version") exitWith
+{
+	diag_log "AVS - Mission code initialization cancelled. Server code not detected.";
+};
+
 AVS_fnc_getConfigLoadout = compileFinal (preprocessFileLineNumbers "AVS\AVS_fnc_getConfigLoadout.sqf");
 
 if (AVS_RearmSystemActive) then
